@@ -1,11 +1,19 @@
-initial_capital = input('Enter initial Capital: ')
+ 
+import random
+initial_capital=float(input('EnterinitialCapital:'))
+winning_prob=float(input('Enterwinningprobability:'))
+ 
+betting_amount=float(input('Enterbettingamount:'))
+  
+reward_ratio=float(input('Enterrisktorewardratio:'))
+avg_lose=float(input('Enter averagelosefactorinloneinstance:'))
+ 
+trade = random.choices([True, False], weights=[winning_prob, 1-winning_prob], k=2)
+ 
+if trade is True:
+    current_capital = betting_amount * reward_ratio
+else:
+ 	current_capital = betting_amount - (betting_amount* avg_lose)
+ 	
+print(current_capital)
 
-winning_prob = input('Enter winning probability: ')
-
-betting_amount = input('Enter betting amount: ')
-
-risk_to_reward = input('Enter risk to reward ratio: ')
-
-avg_lose = input('Enter average lose factor in one instance: ')
-
-current_capital = initial_capital 
