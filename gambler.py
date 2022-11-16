@@ -1,11 +1,15 @@
-initial_capital = input('Enter initial Capital: ')
+initial_capital = float(input('Enter initial Capital: '))
 
-winning_prob = input('Enter winning probability: ')
+winning_prob = float(input('Enter winning probability: '))
 
-betting_amount = input('Enter betting amount: ')
+betting_amount = float(input('Enter betting amount: '))
 
-risk_to_reward = input('Enter risk to reward ratio: ')
+reward_ratio = float(input('Enter reward ratio: '))
 
-avg_lose = input('Enter average lose factor in one instance: ')
+avg_lose = float(input('Enter average lose factor in one instance: '))
 
-current_capital = initial_capital 
+if trade == win
+
+#current_capital = betting_amount*((1+reward_ratio)**winning_prob)*((1-avg_lose)**(1-winning_prob))
+
+print(current_capital)
