@@ -16,4 +16,3 @@ else:
  	
 print(current_capital)
 
->>>>>>> 7520e9f6bb010b24db972d4d7c7981af0388663e
