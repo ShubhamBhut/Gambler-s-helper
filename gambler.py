@@ -1,4 +1,6 @@
 import random
+
+
 initial_capital=float(input('Enter initial Capital:'))
 winning_prob=float(input('Enter winning probability:'))
  
