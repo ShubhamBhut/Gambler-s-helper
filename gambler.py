@@ -7,7 +7,7 @@ betting_amount=float(input('Enterbettingamount:'))
 reward_ratio=float(input('Enterrisktorewardratio:'))
 avg_lose=float(input('Enter averagelosefactorinloneinstance:'))
  
-trade = random.choices([True, False], weights=[winning_prob, 1-winning_prob], k=2)
+trade = random.choices([True, False], weights=[winning_prob, 1-winning_prob], k=1)
  
 no_of_trades = int(input("Enter no. of trades: "))
 
