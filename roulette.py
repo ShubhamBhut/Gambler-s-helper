@@ -12,3 +12,9 @@ for i in range(37):
 print(american_roulette)
 print(european_roulette)
 
+def rotate_roulette(roulette):
+    slot = random.choice(roulette)
+    print(slot)
+
+rotate_roulette(american_roulette)
+
