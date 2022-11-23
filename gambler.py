@@ -21,6 +21,10 @@ for i in range(no_of_trades):
     else:
  	    current_capital = current_capital - (betting_amount * avg_lose)
     print(current_capital)
+
+
+mathametical_current_capital = initial_capital + (winning_prob*betting_amount*(reward_ratio)*no_of_trades) - ((1-winning_prob)*betting_amount*(avg_lose)*no_of_trades)
  	
-print(current_capital)
+print("Current capital is ", current_capital)
+print("Methametically current capital is ", mathametical_current_capital)
 
