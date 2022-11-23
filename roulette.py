@@ -45,7 +45,8 @@ rotate_roulette(american_roulette, turns=5)
 
 bet_type = [even_bets, odd_bets, red_bets, black_bets, first_twelve_bets, second_twelve_bets, third_twelve_bets, first_eighteen_bets, second_eighteen_bets, column1_bets, column2_bets, column3_bets, zeroes_bets, single_bets]
 
-
+def payout(condition):
+    if condition == "win"
 
 
 
