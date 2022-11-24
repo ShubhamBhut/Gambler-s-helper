@@ -22,7 +22,7 @@ roll=random.randint(1, 36)
 
 print('roll is ', roll)
 
-rolldozen=math.ceil(roll/12)
+rolldozen=str(math.ceil(roll/12))
 
 if roll%2==1: rolloddeven=1
 else: rolloddeven=2
@@ -30,6 +30,8 @@ else: rolloddeven=2
 if roll<19: rolllowhigh=1
 else: rolllowhigh=2
 
+rolloddeven = str(rolloddeven)
+rolllowhigh = str(rolllowhigh)
 #payout for type 1
 
 if type=='1' and single==roll :
@@ -39,10 +41,10 @@ elif type=='1': money=0
 
 #payout for type 2
 
-if type=='2' and dozen==rolldozen :
+if '2' in type and dozen[0]==rolldozen :
     payout=2*money
     money=money+payout
-elif type=='2': money=0
+elif '2' in type: money=0
 
 #payout fo type 3
 
@@ -59,3 +61,6 @@ if type=='4' and half==rolllowhigh :
 elif type=='4' : money=0
 
 print('Final money is ', money)
+print('Type is: ', type)
+print('dozen is: ', dozen)
+print(rolldozen)
