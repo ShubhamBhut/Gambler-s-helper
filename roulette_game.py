@@ -34,10 +34,9 @@ rolloddeven = str(rolloddeven)
 rolllowhigh = str(rolllowhigh)
 #payout for type 1
 
-if '1' in type and single==roll :
-    payout=35*money
+if '1' in type:
+    payout = (roll.count(single)*35*money) - (len(roll) - roll.count(single)*money)
     money=money+payout
-elif '1' in type: money=0
 
 #payout for type 2
 
@@ -47,17 +46,15 @@ if '2' in type:
 
 #payout fo type 3
 
-if '3' in type and oddeven==rolloddeven :
-    payout=money
+if '3' in type:
+    payout = (rolloddeven.count(oddeven)*1*money) - ((len(rolloddeven) - rolloddeven.count(oddeven))*money)
     money=money+payout
-elif '3' in type: money=0
 
 #payout for type 4
 
-if '4' in type and half==rolllowhigh :
-    payout=money
+if '4' in type:
+    payout = (rolllowhigh.count(half)*1*money) - ((len(rolllowhigh) - rolllowhigh.count(half)) * money)
     money=money+payout
-elif '4' in type : money=0
 
 print('Final money is ', money)
 print('Type is: ', type)
