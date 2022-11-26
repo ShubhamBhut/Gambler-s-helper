@@ -85,6 +85,7 @@ bet2 = bet(betting_amount=100)
 bet3 = bet(69)
 print(bet2.odd_even_bet(odd_even_bet=[1]))
 print(bet3.eighteen_bet(eighteen_bet=[1]))
+print(bet2.betting_amount + bet3.betting_amount)
 print('This is roll', roll)
 #print(type(roll))
 
