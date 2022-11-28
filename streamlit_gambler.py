@@ -15,7 +15,7 @@ font-size: 18px;
 
 st.write(font_css, unsafe_allow_html=True)
 initial_capital = st.number_input("Enter the inital capital: ", 1000)
-winning_prob = st.number_input('Enter the winning probability: ', 0.6)
+winning_prob = st.number_input('Enter the winning probability: ')
 betting_amount = st.number_input('Enter the betting amount: ', 200)
 reward_ratio = st.number_input('Enter the reward ratio: ', 0.5)
 avg_loss = st.number_input('Enter the average loss multiple: ', 0.2)
