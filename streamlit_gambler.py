@@ -20,7 +20,6 @@ betting_amount = st.number_input('Enter the betting amount: ', 200)
 reward_ratio = st.number_input('Enter the reward ratio: ', 0.5)
 avg_loss = st.number_input('Enter the average loss multiple: ', 0.2)
 no_of_trades = int(st.number_input('Enter the numger of trades: '))
-
 trade = random.choices([True, False], weights=[winning_prob, 1-winning_prob], k=1)
 
 current_capital = initial_capital
