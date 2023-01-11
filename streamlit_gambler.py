@@ -33,6 +33,7 @@ for i in range(no_of_trades):
         current_capital = current_capital + (betting_amount * reward_ratio)
     else:
  	    current_capital = current_capital - (betting_amount * avg_loss)
+
     capital_array.append(current_capital)
     mathametical_current_capital = initial_capital + (winning_prob*betting_amount*reward_ratio*i) - ((1-winning_prob)*betting_amount*avg_loss*i)
     mathametical_current_capital_array.append(mathametical_current_capital)
